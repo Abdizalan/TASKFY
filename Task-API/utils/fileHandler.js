@@ -19,7 +19,7 @@ const readTasks = () => {
 };
 
 // Write tasks to JSON file
-const writeTasks = (tasks) => {
+cons writeTasks = (tasks) => {.
     try {
         fs.writeFileSync(filePath, JSON.stringify(tasks, null, 2));
     } catch (err) {
