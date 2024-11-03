@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
         res.end(content);
       }
     });
-  } else if (req.url.startsWith("/tasks")) {
+  } else if (req.url.startWith("/tasks")) {
     taskRoutes(req, res);
   } else {
     res.writeHead(404, { "Content-Type": "application/json" });
